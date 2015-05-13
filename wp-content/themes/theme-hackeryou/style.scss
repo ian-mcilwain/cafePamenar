@@ -1,0 +1,512 @@
+/*
+Theme Name: HackerYou Starter Theme
+Theme URI: http://hackeryou.com;
+Description: Starter theme for building any website. Created by HackerYou. Rename this to your own theme page.
+Version: 1.0
+Author: HackerYou
+Author URI: http://hackeryou.com
+*/
+
+
+/* =============================================================================
+                   Normalize, border box and clearfix
+   ========================================================================== */
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+img {
+  max-width:100%;
+}
+
+/* Global Classes / Wordpress Specific */
+.aligncenter    { text-align: center; margin: 0 auto; }
+.alignleft      { float: left; }
+.alignright     { float: right; }
+img.alignleft     { padding-right: 5px;}
+img.alignright    { padding-left: 5px; }
+.clear        { width:100%; float:left; clear:both;}
+
+
+
+/* =============================================================================
+                   Default Styling
+   ========================================================================== */
+
+body {
+  color:#333;
+}
+
+.container {
+  max-width:1600px;
+  margin:0 auto;
+}
+
+.content {
+  float:left;
+  width:65%;
+  margin-right: 5%;
+
+}
+
+.full {
+  width:100%;
+}
+
+/* links */
+a {
+  color:#BA209B;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #D424B1;
+}
+
+/* paragraphs */
+p {
+  line-height: 1.5;
+}
+
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin:0;
+  padding:20px;
+}
+  blockquote p {
+    margin-top: 0;
+  }
+
+/*tables*/
+table td {
+  padding:10px;
+}
+table tr td:first {
+  padding-right: 0;
+}
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+dd {
+  padding:10px;
+  margin-left: 10px;
+}
+
+/*lists*/
+ul li,ol li {
+  padding:3px;
+}
+
+/*PRE*/
+
+pre {
+  background: #F7F7F7;
+  padding:10px;
+  border-radius: 4px;
+  border:1px solid #ccc;
+}
+/* =============================================================================
+                   Sidebar
+   ========================================================================== */
+.sidebar {
+  width:30%;
+  float:left;
+}
+  .sidebar ul {
+    margin:0;
+    padding:0;
+  }
+    .sidebar ul li {
+      list-style: none;
+    }
+
+
+  // Starter theme code ends here
+body {
+
+  h1 {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 54px;
+  border-bottom: 2px solid lightgray;
+  }
+
+  h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  font-size: 42px
+  }
+  
+  p {
+  font-family: 'Lato', sans-serif;
+  }
+}
+
+.header {
+  // border-bottom: 1px solid black;
+  background-image: url(images/pamenarinterioview.jpg);
+  background-size: cover;
+  background-position: 50%;
+  
+  img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  }
+
+  p {
+  text-align: center;
+  font-weight: bold;
+  }
+
+  .hours2 {
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+}
+
+.headerOverlay {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.footer {
+
+    a {
+      text-decoration: none;
+      color: black;
+      transition: all 0.3s ease;  
+      font-size: 28px;
+    }
+
+    a:hover {
+      color:#dbdbdb;
+      text-shadow: 2px 2px 8px rgba(50, 50, 50, 0.75);
+    }
+
+    .fa-stack-1x {
+      color: white; 
+      transition: all 0.3s ease;
+    }
+
+    .fa-stack-1x:hover {
+      color: black;
+    } 
+
+    .socialMedia {
+      display: block;
+      text-align: center;
+    }
+
+    .myLink {
+      font-size: 14px;
+      transition: all 0.3s ease;
+      text-align: center;
+      margin-top: 10px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .myLink:hover {
+      color: black;
+      text-shadow: none;
+    }
+}
+
+a:focus {
+outline: none;
+}
+
+.about {
+  margin-left: 5%;
+  margin-right: 5%;
+  /*margin-bottom: 5%;*/
+  padding-top: 20px;  
+  /*background-color: rgba(255, 255, 255, 0.5);*/
+  // border-bottom: 2px solid lightgray;
+  padding-bottom: 30px;
+}
+.menus {
+  h3 {
+    text-align: center; 
+  }
+
+  h2 {
+    text-align: center;
+    // border-bottom: 2px solid lightgray;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+}
+.menu {
+  border: 1px solid lightgray;
+  // border-radius: 5px;
+  margin-bottom: 2%;
+  background-color: none;
+  transition: all 0.5s ease;
+  
+  .overlay{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  img {
+
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    // border-radius: 5px;
+    width: 95%;
+  }
+
+  h3 {
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: 28px;
+  }
+}
+.menu:hover {
+  background-color: #dfdfdf;
+  box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.widget-container {
+  list-style: none;
+
+  .widget-title{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400;
+  }
+  .textwidget {
+    display: inline;
+  }
+
+}
+
+.menuImage {
+  max-width: 1600px;
+  margin: 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+.menuTitleBar {
+  width: 100%;
+  max-width: 1600px;
+  background-image: url("images/Salad.jpg");
+  background-position: 50%;
+  height: 210px;
+  margin: 0 auto;
+}
+
+.menuLogo {
+
+  p{
+  float: left;
+  display: inline-block;
+  margin-left: 5%;
+  position: absolute;
+  }
+
+  h2{
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    text-transform: uppercase;
+    margin: 0;
+  }
+}
+
+.menuWidget {
+  list-style: none;
+  text-align: center;
+  padding-left: none;
+  font-size: 32px;
+  font-family: 
+
+}
+
+.menuContent{
+  li {
+  list-style: none;
+  text-align: center;
+  }
+
+  ul{
+    padding-left: 0;
+  }
+
+}
+
+.simple-image:hover {
+  // box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+@media (min-width: 768px) {
+  .header {
+    width: 30%;
+    height:100%;
+    position: fixed;
+  }
+
+  .headerOverlay {
+    height: 100%
+
+  }
+
+  .wrapper {
+    width: 70%;
+    position: relative;
+    left: 30%;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 1%;
+    /*left: 10%;*/
+    width: 30%;
+  
+
+    p {
+      text-align: center;
+      /*margin-top: 200px;*/
+      margin-bottom: 0;
+    }
+
+    .social1 {
+      /*margin-left: 26%;*/
+    }
+  }
+
+  .menus {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+
+  .menu:nth-child(odd) {
+    width: 48%;
+    float: right;
+  }
+  .menu:nth-child(even) {
+    width: 48%;
+    float: left;
+  }
+  }
+}
+// min width-768 ends here
+
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .wrapper {
+    /*background-color: yellow; */
+  }
+
+  .footer {
+    padding-top: 40px;
+    padding-left: 20px;
+  }
+
+  .footer .social1 {
+    /*margin-left: 22%;*/
+  }
+  .footer .social2 {
+    margin-left: 5%;
+  }
+
+  .footer p {
+    text-align: right;
+    margin-bottom: 0;
+  }
+  .menus {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .menus {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+
+  .menu:nth-child(odd) {
+    width: 48%;
+    float: right;
+  }
+  .menu:nth-child(even) {
+    width: 48%;
+    float: left;
+  }
+  }
+
+  .menuLogo{ 
+    h2{
+    padding-top: 80px;
+    // text-align: right;
+    }
+    p{
+      position: static;
+    }
+
+  }
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+  .followUs {
+    display: block;
+  }
+
+  .menus {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+   .menus {
+    padding-left: 5%;
+    padding-right: 5%;
+  
+
+  .menu:nth-child(odd) {
+    width: 100%;
+    float: none;
+  }
+  .menu:nth-child(even) {
+    width: 100%;
+    float: none;
+  }
+  }
+
+  .menuLogo{ 
+    h2{
+    padding-top: 80px;
+    font-size: 36px;
+    // text-align: right;
+    }
+    p{
+      position: static;
+      margin-left: 0;
+      // float: left; 
+    }
+
+  }
+
+}
+
